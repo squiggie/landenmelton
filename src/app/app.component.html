@@ -1,0 +1,93 @@
+<header>
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar top-nav-collapse" [containerInside]="false">
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbRippleRadius>
+          <a class="nav-link">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item waves-light">
+          <a class="nav-link" href="https://www.facebook.com/squiggie" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="nav-item waves-light">
+          <a class="nav-link" href="https://twitter.com/squigge" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <!-- Main -->
+  <div class="view intro hm-gray">
+    <div class="full-bg-img flex-center">
+      <div class="container text-center white-text wow fadeInUp">
+        <h1>Landen Melton</h1>
+        <div class="separator-container">
+          <div class="separator line-separator">✻</div>
+        </div>
+        <p>Mobile and Web Developer</p>
+      </div>
+    </div>
+  </div>
+  <!-- /.Main -->
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-12">
+        <p align="justify" *ngFor="let desc of description">
+          {{desc}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects py-5 stylish-color-dark">
+    <div class="container">
+      <h1 class="display-4 white-text">Projects</h1>
+      <div class="separator-container">
+        <div class="separator line-separator">✻</div>
+      </div>
+      <p class="white-text">Below is a list of my latest projects. Please take a look for a good example of what I can provide.</p>
+      <!--Card-->
+      <div *ngFor="let project of projects" class="card">
+
+        <!--Card image-->
+        <div class="view hm-white-slight waves-light" mdbRippleRadius>
+          <img src={{project.img}} class="img-fluid" alt="Project1">
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body">
+          <!--Title-->
+          <h4 class="card-title">{{project.title}}</h4>
+          <!--Text-->
+          <p class="card-text">{{project.description}}</p>
+          <a class="btn btn-primary waves-light" mdbRippleRadius href="{{project.link}}" target="_blank">View Project</a>
+        </div>
+
+      </div>
+      <!--/.Card-->
+    </div>
+  </div>
+
+
+</main>
+<!--Main Layout-->

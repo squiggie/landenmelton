@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+body, html {
+    height: 100%;
+    margin: 0 !important;
+}
+p, h1, h2, h3, h4, h5, h6, {
+    font-family: 'Exo 2', sans-serif;
+}
+
+header {
+    background: url("assets/bg-min.jpg")no-repeat center center;
+    background-size: cover;
+}    
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #3E4551 !important; 
+}
+
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 700px; 
+    }
+    .intro {
+        min-height: 700px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #3E4551;
+    }
+}
+.separator-container {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+}
+.separator {
+    color: #fff;    
+    margin: 0.5em auto 1.5em;
+}
+.separator-container .separator.line-separator:before {
+    float: left;
+}
+.separator-container .separator.line-separator:after {
+    float: right;
+}
+.separator-container .separator.line-separator:before, .separator-container .separator.line-separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 14px;
+    border: 1px solid black;
+}
+// @media (min-width: 768px){
+//     .section-header .separator {
+//         width: 20em;
+//     }
+// }
+.card-section{
+    max-width: 90%;
+    margin: auto;
+}
