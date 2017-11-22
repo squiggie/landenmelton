@@ -11,7 +11,8 @@ p, h1, h2, h3, h4, h5, h6, {
 header {
     background: url("assets/bg-min.jpg")no-repeat center center;
     background-size: cover;
-}    
+}
+
 .navbar {
     background-color: transparent;
 }
@@ -59,11 +60,6 @@ header {
     margin-top: 14px;
     border: 1px solid black;
 }
-// @media (min-width: 768px){
-//     .section-header .separator {
-//         width: 20em;
-//     }
-// }
 .card-section{
     max-width: 90%;
     margin: auto;
